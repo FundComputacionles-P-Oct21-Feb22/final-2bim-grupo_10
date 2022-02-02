@@ -1,0 +1,208 @@
+1.  Inicio
+2.  funcion principal()
+3.    datosCuentasCreadas[]
+4.    bandera<--true
+5.    Mientras(bandera)
+6.	opcion,i[1-n]<--0
+7.	Escribir("\tEscoja una opción")
+8.	Escribir("1. Crear perfil de Facebook")
+9.      Escribir("2. Crear perfil de Twitter")
+10.     Escribir("3. Crear perfil de Whatsapp")
+11.     Escribir("4. Crear perfil de Telegram")
+12.     Escribir("5. Crear perfil de Signal")
+13.     Escribir("6. Crear perfil de Instagram")
+14.     Escribir("7. Crear perfil de Flickr")
+15.     Escribir("8. Terminar")
+16.     Leer opcion
+17.	Si(opcion==1)entonces
+18.	  crearFacebook(datosCuentasCreadas.add(cuentaFacebook))
+19.	De lo contrario
+20.	    Si(opcion==2)entonces
+21.	    crearTwitter(datosCuentasCreadas)
+22.	    De lo contrario
+22.	       Si(opcion==3)entonces
+23.	       crearWhatsapp(datosCuentasCreadas.add(cuentaWhatsapp))
+24.	       De lo contrario
+25.	          Si(opcion==4)entonces
+26.	          crearTelegram(datosCuentasCreadas)
+27.	          De lo contrario
+28.	             Si(opcion==5)entonces
+29.	             crearSignal(datosCuentasCreadas.add(cuentaSgnal))
+30.	             De lo contrario
+31.	                Si(opcion==6)entonces
+31.	                crearInstagram(datosCuentasCreadas)
+33.		        De lo contrario
+34.	                   Si(opcion==7)entonces
+35.	                   crearFlickr(datosCuentasCreadas.add(cuentaFlickr))
+36.			   De lo contrario		
+37.			      Si(opcion==8)entonces
+38.	                      obtenerMensaje(datosCuentasCreadas.length, i)//obtener mensaje lleva de parametro el numero de elementos del array dotosCuentasCreados
+39.			      bandera = false
+40.			      De lo contrario
+41.	 		      Escribir"Ingrese una opcion valida"
+42.	fin si
+43. fin funcion principal()
+44. funcion crearFacebook()
+45.    redSocial<--"Facebook"
+46.    Escribir ("\tCreando cuenta de "+redSocial)
+47.    Escribir "Nombre de usuario: "
+48.    usuario, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+49.    Lee nombreUsuario
+50.    Escribir "Edad: "
+51.    edad, i[1-n]
+52.    Lee edad
+53.    Escribir"Ciudad: "
+54.    ciudad, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+55.    Lee ciudad
+56.    Escribir"Pais: "
+57.    pais, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+58.    Lee pais
+59.    Escribir "Correo electronico"
+60.    correoElectronico,x[{A-Z}{a-z}{0-9},{@},{.},{BS}]<--" "   
+61.    Lee correoElectronico
+62.    resumenFacebook,x[{A-Z}{a-z}{0-9},{BS}]<--" "
+63.    resumenFacebook<--(resumenFacebook+"\nRed: "+redSocial+"\nNombree de usuario: "+nombreUsuario+"\nEdad: "+edad+"\nCiudad: "+ciudad+"\nPais: "+pais+"\nCorreo: "+correoElectronico)
+64.    retornar resumenFacebook
+65. fin funcion crearFacebook()
+66. funcion crearTwitter(datosCuentasCreadas)
+67.    redSocial<--"Twitter"
+68.    Escribir ("\tCreando cuenta de "+redSocial)
+69.    Escribir "Nombre de usuario: "
+70.    usuario, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+71.    Lee nombreUsuario
+72.    Escribir"Nombres: "
+73.    nombres, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+74.    Lee nombres
+75.    Escribir"Apellidos: "
+76.    apellidos, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+77.    Lee apellidos
+78.    Escribir "Edad: "
+79.    edad, i[1-n]
+80.    Lee edad
+81.    Escribir"Ciudad: "
+82.    ciudad, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+83.    Lee ciudad
+84.    Escribir"Pais: "
+85.    pais, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+86.    Lee pais
+87.    Escribir"Idioma: "
+88.    idioma, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+89.    Lee idioma
+90.    Escribir "Correo electronico"
+91.    correoElectronico,x[{A-Z}{a-z}{0-9},{@},{.},{BS}]<--" "   
+92.    Lee correoElectronico
+93.    resumenTwitter,x[{A-Z}{a-z}{0-9},{BS}]<--" "
+94.    resumenTwitter<--(resumenTwitter+"\nRed: "+redSocial+"\nNombree de usuario: "+nombreUsuario+"\nEdad: "+edad+"\nCiudad: "+ciudad+"\nPais: "+pais+"\nIdioma: "+idioma+"\nCorreo: "+correoElectronico)
+95.    datosCuentasCreadas.add(resumenTwitter)
+96. fin funcion crearTwitter(datosCuentasCreadas)
+97. funcion crearWhatsapp()
+98.    redSocial<--"Whatsapp"
+99.    Escribir ("\tCreando cuenta de "+redSocial)
+100.   Escribir "Nombre de usuario: "
+101.   usuario, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+102.   Lee nombreUsuario
+103.   Escribir"Telefono: "
+104.   numeroTelefono, i[1-n]
+105.   Lee numeroTelefono
+106.   Escribir "Edad: "
+107.   edad, i[1-n]
+108.   Lee edad
+109.   Escribir"Ciudad: "
+110.   ciudad, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+111.   Lee ciudad
+112.   Escribir"Pais: "
+113.   pais, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+114.   Lee pais
+115.   resumenWhatsapp,x[{A-Z}{a-z}{0-9},{BS}]<--" "
+116.   resumenWhatsapp<--(resumenWathsapp+"\nRed: "+redSocial+"\nNombree de usuario: "+nombreUsuario+"\nTelefono"+numeroTelefono+"\nEdad: "+edad+"\nCiudad: "+ciudad+"\nPais: "+pais)
+117.   retornar resumenWhatsapp
+118. funcion crearTelegram()
+119.   redSocial<--"Telegram"
+120.   Escribir ("\tCreando cuenta de "+redSocial)
+121.   Escribir "Nombre de usuario: "
+122.   usuario, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+123.   Lee nombreUsuario
+124.   Escribir"Telefono: "
+125.   numeroTelefono, i[1-n]
+126.   Lee numeroTelefono
+127.   Escribir"Ciudad: "
+128.   ciudad, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+129.   Lee ciudad
+130.   Escribir"Pais: "
+131.   pais, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+132.   Lee pais
+133.   Escribir"Area Interes"
+134.   areaInteres,x[{A-Z}{a-z}{0-9},{BS}]<--" "
+135.   Lee areaInteres
+136.   resumenTelegram,x[{A-Z}{a-z}{0-9},{BS}]<--" "
+137.   resumenTelegram<--(resumenTelegram+"\nRed: "+redSocial+"\nNombree de usuario: "+nombreUsuario+"\nTelefono"+numeroTelefono+"\nCiudad: "+ciudad+"\nPais: "+pais+"\nArea Interes: "+areaInteres)
+138.  datosCuentasCreadas.add(resumenTelegram)
+139. fin funcion crearTelegram()
+140. funcion crearSignal()
+141.   redSocial<--"Signal"
+142.   Escribir ("\tCreando cuenta de "+redSocial)
+143.   Escribir "Nombre de usuario: "
+144.   usuario, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+145.   Lee nombreUsuario
+146.   Escribir"Telefono: "
+147.   numeroTelefono, i[1-n]
+148.   Lee numeroTelefono
+149.   Escribir"Ciudad: "
+150.   ciudad, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+151.   Lee ciudad
+152.   Escribir"Pais: "
+153.   pais, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+154.   Lee pais
+155.   Escribir"Hobby principal: "
+156.   hobby, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+157.   Lee hobby
+158.   resumenSignal,x[{A-Z}{a-z}{0-9},{BS}]<--" "
+159.   resumenSignal<--(resumenSignal+"\nRed: "+redSocial+"\nNombree de usuario: "+nombreUsuario+"\nCiudad: "+ciudad+"\nPais: "+pais+"\nHobby principal: "+hobby)
+160.  datosCuentasCreadas.add(resumenSignal)
+161. fin funcion crearSignal()
+162. funcion crearInstagram()
+163.   redSocial<--"Instagram"
+164.   Escribir ("\tCreando cuenta de "+redSocial)
+165.   Escribir "Nombre de usuario: "
+166.   usuario, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+167.   Lee nombreUsuario
+168.   Escribir"Ciudad: "
+169.   ciudad, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+170.   Lee ciudad
+171.   Escribir"Edad: "
+172.   edad, i[1-n]
+173.   Lee edad
+174.   Escribir"Correo Electronico: "
+175.   correoElectronico, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+176.   Lee correoElectronico
+177.   resumenInstagram,x[{A-Z}{a-z}{0-9},{BS}]<--" "
+178.   resumenInstagram<--(resumenInstagram+"\nRed: "+redSocial+"\nNombree de usuario: "+nombreUsuario+"\nCiudad: "+ciudad+"\nEdad: "+edad+"\nCorreo electronico: "+correoElectronico)
+179.  retornar resumenInstagram
+180. fin funcion crearInstagram
+181. funcion crearFlickr()
+182.   redSocial<--"Flickr"
+183.   Escribir ("\tCreando cuenta de "+redSocial)
+184.   Escribir "Nombre de usuario: "
+185.   usuario, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+186.   Lee nombreUsuario
+187.   Escribir"Correo Electronico: "
+188.   correoElectronico, x[{A-Z}{a-z}{0-9},{BS}]<--" "
+189.   Lee correoElectronico
+190.   resumenFlickr,x[{A-Z}{a-z}{0-9},{BS}]<--" "
+191.   resumenFlickr<--(resumenInstagram+"\nRed: "+redSocial+"\nNombree de usuario: "+nombreUsuario+"\nCorreo electronico: "+correoElectronico)
+192.   datosCuentasCreadas.add(resumenFlickr)
+193. fin funcion crearFlickr
+194. funcion obtenerMensaje(numeroCuentas, i)
+195.   mensajeFinal[3]<--["Campaña con poca afluencia","Campaña moderada siga adelante","Excelente campaña"]
+196.   mensaje,x[{a-z}{A-Z}{BS}]<--" "
+197. Si (numeroCuentas>=1 and numeroCuentas<=5)
+198.   mensaje<--mensajeFinal[0]
+199. De lo contrario
+200. 	Si (numeroCuentas>=6 and numeroCuentas<=15)
+201. 	mensaje<--mensajeFinal[1]
+202.	De lo contrario
+203. 		Si (numeroCuentas>=16)
+204. 		mensaje<--mensajeFinal[2]
+205. fin si
+206. retornar mensaje
+207. fin funcion obtenerMensaje.
